@@ -3,16 +3,9 @@ defmodule GDecoder do
   Documentation for `GDecoder`.
   """
 
-  @doc """
-  Hello world.
+  def run do
+    {:ok, contents} = File.read("example_files/circle.nc")
 
-  ## Examples
-
-      iex> GDecoder.hello()
-      :world
-
-  """
-  def hello do
-    :world
+    IO.inspect contents
   end
 end
